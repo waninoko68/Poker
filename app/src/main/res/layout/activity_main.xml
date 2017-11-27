@@ -29,7 +29,8 @@
             android:text="drop"
             android:onClick="dropCard"
             android:layout_marginTop="16dp"
-            android:layout_gravity="end"/>
+            android:layout_gravity="end"
+            android:id="@+id/dropButton"/>
 
     </LinearLayout>
 
@@ -53,7 +54,8 @@
             android:layout_height="wrap_content"
             android:text="deal"
             android:onClick="dropCard2"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:id="@+id/dealButton"/>
 
     </LinearLayout>
 

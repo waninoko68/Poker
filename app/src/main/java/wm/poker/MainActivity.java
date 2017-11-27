@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     boolean isBack = true;
     boolean isBack2 = true;
     boolean isDeal = true;
+    boolean isVisible = true;
     LinearLayout background;
     AccelerateDecelerateInterpolator accelerateDecelerateInterpolator;
 
@@ -155,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
     public void dropCard2(View v)
     {
         Button deal = (Button)v;
-
+        Button drop = findViewById(R.id.dropButton);
         if(isDeal)
         {
             isDeal = false;
@@ -168,6 +169,16 @@ public class MainActivity extends AppCompatActivity {
             isDeal = true;
             deal.setText("DEAL");
             //prepareObjectAnimator2(accelerateDecelerateInterpolator);
+        }
+        if(isVisible)
+        {
+            drop.setVisibility(Button.INVISIBLE);
+            isVisible = false;
+        }
+        else
+        {
+            drop.setVisibility(Button.VISIBLE);
+            isVisible = true;
         }
     }
 
